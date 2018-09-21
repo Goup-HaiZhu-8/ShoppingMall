@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>hello world</div>
+</body>
+<script src='jquery/jquery-3.3.1.js'></script>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            tppe:'get',
+            url:'https://www.douban.com/',
+            dataTpye:'jsonp',
+            success:function(data){
+                var elems = data;
+                console.log(elems);
+            },
+            error:function(data){
+                var elems = data;
+                console.log(elems);
+            }
+        })
+    });
+</script>
+</html>

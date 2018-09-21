@@ -1,0 +1,11 @@
+DEBUG = True
+ 
+DIALECT = 'mysql'
+DIRVER = 'mysqldb'
+USERNAME = 'root'
+PASSWORD = '123456'
+HOST = 'localhost'
+PORT = '3306'
+DATABASE = 'home'
+SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset=utf8".format(DIALECT, DIRVER, USERNAME, PASSWORD, HOST, PORT, DATABASE)
+SQLALCHEMY_TRACK_MODIFICATIONS = False

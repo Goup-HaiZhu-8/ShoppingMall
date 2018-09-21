@@ -1,0 +1,77 @@
+@charset "UTF-8"
+*{margin: 0;padding: 0}
+.body{background-color: #f5f5f5;
+	  	width: 100%;height: 100%;
+	}
+.logo{height: 70px;width: 100%;
+	background-color: #3c3c3c;
+	}
+.logoimg{background: url(../imgs/logo1.png) 95% 70%;
+	background-repeat: no-repeat;
+	height: 60px;width: 35%;
+	float: left;
+	}
+.logotitle{font-size: 18px;font-family: 微软雅黑;
+		color: #ffffff;
+		margin-top: 13px;
+		float: left;
+		color: white；
+		}
+.registerbody{height: 500px;width: 45%;
+		background-color: white;
+		margin-left: 27.5%;margin-top: 3%;
+		}
+.rgcenter{height: 300px;width: 60%;
+		margin-left: 20%;margin-top: 10%;
+		}
+
+
+.table{margin-left: 20%;margin-top: 5%}
+.tdtitle{width: 80px;height: 60px;
+		font-size: 20px;font-family: 华文新魏;
+		color: #000000}
+
+
+.rgfromline{float: left;
+			font-size: 26px;
+			width: 30%;
+			height: 40px;
+			margin-top: 30px
+			line-height: 40px;
+			font-family: 微软雅黑;
+			color: #0088ff;
+			}
+
+.rgflcontrol{width: 200px;
+			height: 40px;
+			border:1px solid #ccc;
+			margin-top: 30px
+			outline: none;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: #555;
+			}
+
+
+.hr{margin-top: 3%;margin-left: 27.5%;
+	width: 45%;
+	margin-top: 2%
+	}
+.bottom{margin-left: 22.5%; 
+		margin-top: 0.5%; 
+		height: 6px
+		}
+.bottomdiv1{float: left;
+			margin-left: 22.5%;
+			}
+.bottomdiv1a{text-decoration: none;
+			color: #8e8e8e;
+			font-size:12px;
+			}
+.bottomdiv2{float: left;
+			margin-left: 1%;
+			}
+.leg{margin-left: 33%;
+	color: #8e8e8e;
+	font-size: 10px;
+	}

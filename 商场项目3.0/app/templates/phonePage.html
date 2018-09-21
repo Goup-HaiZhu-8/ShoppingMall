@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>华为商城</title>
+	<meta charset="utf-8">
+	<link rel="shortcup ICON " href="../static/phonePage/images/logo.ico" type="images/x-icon">
+	<link rel="stylesheet" type="text/css" href="../static/phonePage/css/shop.css">
+</head>
+
+<body>
+<div id="head">
+	<div id="nav">
+		<div class="navmain">
+			<div id="nav-left">
+				<a href="">首页&nbsp;&nbsp;|</a>
+				<a href="">&nbsp;&nbsp;华为官网&nbsp;&nbsp;|
+				</a>
+				<a href="">&nbsp;&nbsp;荣耀官网&nbsp;&nbsp;|
+				</a>
+				<a href="">&nbsp;&nbsp;花粉俱乐部&nbsp;&nbsp;
+				</a>
+				<a href="">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;|
+				</a>
+				<a href="">&nbsp;&nbsp;v码(优购码)&nbsp;&nbsp;|
+				</a>
+				<a href="">&nbsp;&nbsp;企业购&nbsp;&nbsp;|</a>
+				<a href="">&nbsp;&nbsp;Select Region&nbsp;&nbsp;|</a>
+				<a href="">&nbsp;&nbsp;下载APP&nbsp;&nbsp;|</a>
+				<a href="">&nbsp;&nbsp;更多精彩</a>
+				<a href=""></a>
+			</div>
+			<div id="nav-right">
+				<a href="">&nbsp;&nbsp;&nbsp;&nbsp;请登录&nbsp;&nbsp;</a>
+				<a href="">注册&nbsp;&nbsp;</a>
+				<a href="">我的订单</a>
+			</div>
+			<div class="nav-log">
+				<a href=""><img src="../static/phonePage/images/logo2.png"
+				style="width:94px;height:50px"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="body">
+	<div class="title">
+		<div class="selector">
+				<h2 class="h2">选择喜爱的机型</h2>
+					<div class="select">
+						<span>系列类型</span>
+							<ol>
+								 
+					  					<li v="mate-series">HUAWEI Mate系列</li>
+				  				 
+					  					<li v="p-series">HUAWEI P 系列</li>
+				  				 
+					  					<li v="nova-series">HUAWEI nova系列</li>
+				  				 
+					  					<li v="changxiang-series">华为畅享系列</li>
+				  				
+			  				</ol>
+		  			</div>
+		  		
+					<div class="select">
+						<span>屏幕尺寸</span>
+							<ol >
+								 
+					  					<li v="4_0_4_9">4.0&#34; - 4.9&#34;</li>
+				  				 
+					  					<li v="5_0_5_9">5.0&#34; - 5.9&#34;</li>
+				  				 
+					  					<li v="6">6.0&#34;及以上</li>
+				  				
+			  				</ol>
+		  			</div>
+		  		
+					<div class="select">
+						<span>功能亮点</span>
+							<ol>
+								 
+					  					<li v="slim">超薄</li>
+				  				 
+					  					<li v="largebattery">超大容量电池</li>
+				  				 
+					  					<li v="excellent-camera">拍照神器</li>
+				  				 
+					  					<li v="dual-card">双卡双待</li>
+				  				 
+					  					<li v="dual-4g">双4G支持</li>
+				  				 
+					  					<li v="octa-core-cpu">八核CPU</li>
+				  				 
+					  					<li v="25d-screen">2.5D屏幕</li>
+				  				 
+					  					<li v="4g-cnc">4G全网通</li>
+				  				
+			  				</ol>
+		  			</div>
+		  		
+					<div class="select">
+						<span>摄像头像素</span>
+							<ol>
+								 
+					  					<li v="5-8megapixels">500万-800万以下</li>
+				  				 
+					  					<li v="8-13megapixels">800万-1300万以下</li>
+				  				 
+					  					<li v="13-16megapixels">1300万-1600万以下</li>
+				  				 
+					  					<li v="16megapixels">1600万及以上</li>
+				  				
+			  				</ol>
+		  			</div>
+		  		
+                   
+			</div>
+	</div>
+	<div class="phoneshow">
+{# jinjia模块 #}
+		<div>
+            {% for good in goods %}
+			<img src="../static/phonePage/images/HUAWEI nova 3.jpg">
+			<p>{{ good.gname }}</p>
+			<span class="place">&yen;{{ good.price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+            {% endfor %}
+		</div>
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI nova 3i.jpg">#}
+{#			<p>HUAWEI nova 3i</p>#}
+{#			<span class="place">&yen;1999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI P20 Pro.jpg">#}
+{#			<p>HUAWEI P20 Pro</p>#}
+{#			<span class="place">&yen;4488</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI P20.jpg">#}
+{#			<p>HUAWEI P20</p>#}
+{#			<span class="place">&yen;3388</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI nova 3e.jpg">#}
+{#			<p>HUAWEI nova 3e</p>#}
+{#			<span class="place">&yen;1999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI nova 2s.jpg">#}
+{#			<p>HUAWEI nova 2s</p>#}
+{#			<span class="place">&yen;2599</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/华为畅享 8e 青春.jpg">#}
+{#			<p>华为畅享 8e 青春</p>#}
+{#			<span class="place">&yen;799</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI Mate RS 保时捷设计.jpg">#}
+{#			<p>HUAWEI Mate RS 保时捷设计</p>#}
+{#			<span class="place">&yen;9999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/华为畅享8e.jpg">#}
+{#			<p>华为畅享8e</p>#}
+{#			<span class="place">&yen;999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/华为畅享8 Plus.jpg">#}
+{#			<p>华为畅享8 Plus</p>#}
+{#			<span class="place">&yen;1499</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/华为畅享8e.jpg">#}
+{#			<p>华为畅享8e</p>#}
+{#			<span class="place">&yen;999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/华为畅享8.jpg">#}
+{#			<p>华为畅享8</p>#}
+{#			<span class="place">&yen;1299</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI MLA-AL10.jpg">#}
+{#			<p>HUAWEI MLA-AL10</p>#}
+{#			<span class="place">&yen;2399</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI Mate 10 保时捷设计.jpg">#}
+{#			<p>HUAWEI Mate 10 保时捷设计</p>#}
+{#			<span class="place">&yen;8999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI Mate 10(Ascend Mate).jpg">#}
+{#			<p>HUAWEI Mate 10(Ascend Mate)</p>#}
+{#			<span class="place">&yen;3999</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI Mate 10 Pro.jpg">#}
+{#			<p>HUAWEI Mate 10 Pro</p>#}
+{#			<span class="place">&yen;3599</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+{#		<div>#}
+{#			<img src="../static/phonePage/images/HUAWEI 麦芒6.jpg">#}
+{#			<p>HUAWEI 麦芒6</p>#}
+{#			<span class="place">&yen;2199</span>#}
+{#			<span class="addcar" onclick="">加入购物车</span>#}
+{#			<hr>#}
+{#		</div>#}
+	</div>
+</div>
+<div id="bottom">
+	<footer>
+	<!--平台信息模块-->
+	<dl>
+		    <dt>联系方式</dt>
+			<dd><a href="">联系创作者</a></dd>
+			<dd><a href="">免责声明</a></dd>
+			<dd><a href="">新浪微博</a></dd>
+			<dd><a href="">官方微信</a></dd>
+		
+	</dl>
+	<dl>
+		    <dt>保修与退换货</dt>
+			<dd><a href="">保修政策</a></dd>
+			<dd><a href="">退换货政策</a></dd>
+			<dd><a href="">退换货流程</a></dd>
+			<dd><a href="">保修状态查询</a></dd>
+		　　<dd><a href="">配件防伪查询</a></dd>
+	</dl>
+	<dl>
+		    <dt>维修与技术支持</dt>
+			<dd><a href="">售后网点</a></dd>
+			<dd><a href="">预约维修</a></dd>
+			<dd><a href="">手机寄修</a></dd>
+			<dd><a href="">备件价格查询</a></dd>
+		　　<dd><a href="">上门服务</a></dd>
+	</dl>
+	<dl>
+		<dt>关于华为</dt>
+		<dd><a href="#">公司介绍</a></dd>
+		<dd><a href="#">华为商城简介</a></dd>
+		<dd><a href="#">华为线下门店</a></dd>
+		<dd><a href="#">荣耀线下门店</a></dd>
+		<dd><a href="#">诚征英才</a></dd>
+	</dl>
+	<dl>
+		<dt>友情链接</dt>
+		<dd><a href="#">华为官网</a></dd>
+		<dd><a href="#">华为商城手机版</a></dd>
+		<dd><a href="#">荣耀官网</a></dd>
+		<dd><a href="#">花粉俱乐部</a></dd>
+		<dd><a href="#">网站地图</a></dd>
+	</dl>
+	
+	</footer>
+	<div class="copyright">
+			<p>隐私声明 服务协议 Copyright © 2012-2018 华为软件技术有限公司 版权所有 保留一切权利</p>
+			<p>公安备案 苏公网安备32011402010009号 | 苏ICP备17040376号-6 | 增值电信业务经营许可证：苏B2-20130048号| </p>
+	</div>
+</div>
+</body>
+<script src='../static/phonePage/js/jquery-3.3.1.min.js'></script>
+<script src='../static/phonePage/js/shop.js' type='text/javascript'></script>
+</html>
