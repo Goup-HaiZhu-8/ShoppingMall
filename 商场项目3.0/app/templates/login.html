@@ -1,29 +1,364 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HUAWEI</title>
+<meta  charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
+<title>华为手机商城</title>
+<link rel="shortcup icon" href="../static/login/login_images/logo.ico" type="images/x-icon">
+<link rel="stylesheet" href="../static/login/login_css/jigsaw.css">
+<style type="text/css">
+        *{margin:0; padding:0}
+        .body,html{
+            width:100%;height:100%;
+            margin: 0;padding:0;
+            background-color: #EBEBEB;
+            position:relative;
+            display:block;
+        }
+        .head{
+            /*border: 1px solid #F00;*/
+            height:67px;width: 100%;
+            position: relative;
+            display:block;
+        }
+        .headimg{
+            /*border: 1px solid #00FFFF ;*/
+          ;width: 330px;height: 56px;
+          margin-top:auto;
+          margin-bottom:auto;
+          margin-left:400px;
+          background-image: url(../static/login/login_images/headimg.png);
+          background-repeat:no-repeat;
+          position: relative;
+          display:block;  
+        }
+        .center{
+            /*border: 1px solid #00bfff;*/
+          height:590px;width:100%;
+          background-color: #081638;
+          background-repeat: no-repeat;
+          position: relative;
+          display:block;
+        }
+        .denglu{
+            /*border: 1px solid #bfff00;*/
+          width:1130px;height: 590px;
+          background-image: url(../static/login/login_images/login_default_bg.png);
+          margin-top:28px;margin-bottom:30px;
+          background-color:#F5F5F5;
+          margin:auto;
+          display:block;
+          position: relative;
+        }
+        .login{
+            /*border: 1px solid #FFFF00;*/
+            width:380px;height:530px;
+            float:right;
+            margin-top: 26px;
+            margin-bottom:26px;
+            background-color:#ffffff;
+            position: relative;
+            display:block;
+        }
+        .login_title{
+            width: 320px;height:38px;
+            /*border: 1px solid #0000FF;*/
+            margin-left:26px;margin-right:26px; 
+
+        }
+        .login_main{
+            width: 320px;height:320px;
+            /*border: 1px solid #00FF00;*/
+            margin-left:26px;margin-right:26px;
+        }
+        .contain{
+            /*border: 1px solid #000000;*/
+            width: 312px;
+            height: 70px;
+
+            margin:15px auto;
+
+        }
+        .xuanze{
+            /*border:1px solid #0BA3E7;*/
+            width: 312px;
+            height: 50px;
+            margin:15px auto;
+        }
+        .input1,.input2 {
+            display: block;
+            width: 310px;
+            line-height: 46px;
+            outline: none;
+            /*border: 1px solid #c8cccf;*/
+            border-radius: 4px;
+            color: #6a6f77;
+            float: right;
+        }
+        .wenzi1{
+            /*border:1px solid #0BA3E7;*/
+            width: 150px;
+            float: left;
+
+        }
+        .wenzi2{
+            /*border:1px solid #0BA3E7;*/
+            width: 85px;
+            float: right;
+            margin-left:50px;
+
+        }
+        #isSaved {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+        }
+        #msg {
+          width: 100%;
+          line-height: 40px;
+          font-size: 14px;
+          text-align: center;
+        }
+        .btnLogin {
+            width: 280px;
+            height: 38px;
+            background-color:#B40707;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            margin-left:20px;
+            margin-top:15px; 
+        }
+        .goReg {
+            float: right;
+            width: 280px;
+            height: 38px;
+            /*border: 1px solid #64a131;*/
+            background: #719DCC;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 38px;
+            /*margin-left:4px;*/
+            margin-right:20px; 
+            margin-top:15px;
+        }
+               
+        .login_othor{
+            width:320px;height:20px;
+            /*border: 1px solid #00FF11;*/
+            margin-left:26px;margin-right:26px;
+        }
+        .login_othor_left{
+            float: left;
+            width:100px;height: 1px;
+            margin-top:14.5px;margin-bottom:14.5px; 
+            background-color:#888888;
+            
+        } 
+        .login_othor_right{
+            width: 100px;height: 1px;
+            margin-top:14.5px;margin-bottom:14.5px; 
+            background-color:#888888;
+            float:right;
+        } 
+        .login_bottom{
+            width:320px;height: 85px;
+            /*border:1px solid #4B0082;*/
+            margin-top: 10px;
+            margin-left:26px;margin-right:26px;
+
+        }
+        .logo_left{
+            width:100.5px;height:65px;
+            /*border: 1px solid #7B68EE;*/
+            float: left;
+        }
+        .logo_qq{
+            width: 43px;height: 40px;
+            margin-left:26px;
+            margin-right:26px; 
+            margin-top:15px;
+            margin-bottom:20px;   
+        }
+        .logo_center{
+            width:104.5px;height:65px;
+            /*border: 1px solid #7B68EE;*/
+            float:left;
+        }
+        .logo_zhifubao{
+            width: 43px;height: 40px;
+            margin-left:26px;
+            margin-right:26px; 
+            margin-top:15px;
+            margin-bottom:20px;   
+        }
+        .logo_right{
+            width:100px;height:65px;
+            /*border: 1px solid #7B68EE;*/
+            float:left;
+        }
+        .logo_weixin{
+            width: 43px;height: 40px;
+            margin-left:26px;
+            margin-right:26px; 
+            margin-top:15px;
+            margin-bottom:20px;   
+        }
+
+        .denglufoot{/*border:1 solid #9400D3;*/
+            width:420px;height: 132px;
+            background-color:#9400D3;
+        }
+        .footer{/*border: 1px solid #7f00ff;*/
+            width: 630px;height: 50px;
+            margin-left:630px;margin-top:20px; 
+        }
+        .footer1{/*border:1px solid #yellow ;*/
+            width:450px;height:20px;
+            margin-left:90px;
+        }
+        .footer2{/*border:1px solid #blue;*/
+            margin-bottom:10px; 
+        }
+        .footer1 ul li{float:left; 
+            list-style:none;margin-left:2px; 
+        }
+        .footer2 ul li{float:left; 
+            list-style:none;margin-left:1px;
+        }
+        pre{font-size:13px;
+            font-family:微软雅黑;color:#888888;
+        }
+</style>
 </head>
-<body>
-{#{% extends 'base.html' %}#}
-{#   {% block body %}#}
-   <h1>Sign in</h1>
-   <form action=""  method="post" name="login">
-{#        {{form.hidden_tag()}}   #隐藏字段,实现CSRF#}
-{#        <p>#}
-{#            please enter your OpenId:<br/>#}
-{#            {{form.openid(size=80}}<br/>#}
-{#        </p>#}
-{#        <p>{{form.remember_me}}Remember Me</p>#}
-        <p>账号<input type="text" name="user_name" value="{{customer.user_name}}"></p>
-        <p>密码<input type="password" name="password" value="{{customer.password}}"></p>
-        <p>邮箱<input type="text" name="email" value="{{customer.email}}"></p>
-        <p><input type="submit" value="Sign in"></p>
-   </form>
+
+<body class="body" >
+  
+    <div class="head" >
+
+        <div class="headimg"></div>
+    
+    </div>
+
+
+    <div class="center">
+        <div class="denglu">
+            <div class="login">
+                <div class="login_title">
+                     <p style="font-family:'华文行楷' ;font-size:20px;margin: auto;margin-top: 10px" align="center" >华为荣耀，良心创造</p>
+                </div>
+
+                <div class="login_main">
+
+                    <form action="" method="post">
+                        <div class="contain" >
+                                <p style="font-family:'华文行楷' ;font-size:20px">用户：</p>
+                                <input name='username' title="手机号或者邮箱" type="text" placeholder="请输入账号：" class="input2">
+                            
+                        </div>
+
+                        <div class="contain">
+                             <p style="font-family:'华文行楷' ;font-size:20px">密码：</p>
+                            <input type="password" name='password' placeholder="请输入密码：" title='密码形式为6-20位字符包括了数字字母特殊符号' class="input1">
+                                
+                        </div>
+                        
+                        <div class="xuanze">
+                            <div class="wenzi1">
+                                <p style="font-family:'华文行楷' ;font-size:20px">
+                                    <input type="checkbox" name="isSaved" id="isSaved" title="推荐在公用电脑上不要选择此项，在个人电脑上可以选择此项" >记住华为账号
+                                </p>
+                            </div>
+                            <div class="wenzi2">
+                                <p style="font-family:'华文行楷' ;font-size:20px">
+                                    <a href="#" style="">忘记密码</a>
+                                </p>
+                            </div>
+                            {% if err %}
+                            <p style='display: inline-block;width:120px;height: 20px;font-size: 14px;color:red;'>{{err}}</p>
+                            {% endif %}
+                        </div> 
+                        <div>
+                            <input type="submit" value="登录" class="btnLogin" style="font-family:'华文行楷' ;font-size:24px  ">
+                        </div>
+                        <div>
+                            <a href="#" class="goReg" style="font-family:'华文行楷' ;font-size:20px  ">注册会员</a>
+                        </div>
+                    </form>          
+                </div>
+
+                <div class="login_othor">
+                    <div class="login_othor_left"></div>
+                    <span style="font-family: 微软雅黑;color:#888888"> 其他登录方式</span>
+                    <div class="login_othor_right"></div>                    
+                </div>
+
+                <div class="login_bottom">
+                    <div class="logo_left">                    
+                        <div class="logo_qq">
+                            <a href="###" title="QQ登录方式">
+                            <img border="0" src="../static/login/login_images/qq23.png" width="50px;" height="50px;" style="margin : auto;"></a></p>                      
+                        </div>
+                    </div>
+
+                    <div class="logo_center">
+                        <div class="logo_zhifubao">
+                            <a href="###" title="支付宝登录方式">
+                            <img border="0" src="../static/login/login_images/alipay23.png" width="50" height="50" style="margin: auto;"></a></p>                     
+                        </div>
+                    </div>
+                    
+                    <div class="logo_right">                       
+                        <div class="logo_weixin">
+                            <a href="###" title="微信登录方式">
+                            <img border="0" src="../static/login/login_images/weixin23.png" width="50" height="50" style="margin: auto;"></a></p>                     
+                        </div>
+                    </div>                    
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">       
+        <div class="footer1">            
+            <ul>
+                <li><a href="https://hwid1.vmall.com/CAS/portal/agreements/userAgreement/zh-cn_userAgreement.html?version=china&countryCode=cn" 
+                    style="color:#888888;text-decoration: none;">
+                    <pre>华为账号用户协议  |</pre>
+                     </a>
+                </li>                
+                <li><a href="https://hwid1.vmall.com/CAS/portal/agreements/accPrivacyStatement/zh-cn_accPrivacyStatement.html?version=china" 
+                    style="color:#888888;text-decoration: none;">
+                    <pre>  关于华为账号与隐私的声明  |</pre>
+                    </a>
+                </li>                
+                <li><a href="https://hwid1.vmall.com/CAS/portal/faq/zh-cn_faq.html?version=china&countryCode=cn&lang=zh-cn" 
+                    style="color:#888888;text-decoration: none;">
+                    <pre>  常见问题 </pre>
+                    </a>
+                </li>            
+            <ul>
+        </div>
+        
+        <div class="footer2">
+            <ul>
+                <li><pre style="font-size:12px ">Copyright©2011-2018华为软件技术有限公司版权所有保留一切权利苏B2-20070200号 | 苏ICP备09062682号-9</pre></li>
+            </ul>
+        </div>
+
+    </div>
+    
+
+
+      
 </body>
+{#<!-- <script src='{{url_for('jquery/jquery.3.2.0')}}'></script> -->#}
+<script src='../static/jquery/jquery-3.3.1.js'></script>
+{#<script src='../static/login/login_js/login.js'></script>#}
+
 </html>
-{#{% endblock %}#}
-
-
 
 

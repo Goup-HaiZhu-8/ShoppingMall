@@ -9,6 +9,7 @@
             var animated = false;
             var interval = 3000;
             var timer;
+            var width = window.screen.availWidth
 
             function animate (offset) { /*offset为初始*/
                 if (offset == 0) {
@@ -30,10 +31,10 @@
                     else {
                         list.style.left = left + 'px';
                         if(left>-200){
-                            list.style.left = -1342 * len + 'px';
+                            list.style.left = -width * len + 'px';
                         }
-                        if(left<(-1342 * len)) {
-                            list.style.left = '-1342px';
+                        if(left<(-width * len)) {
+                            list.style.left = '-'+width+'px';
                         }
                         animated = false;
                     }
@@ -72,7 +73,7 @@
                 else {
                     index += 1;
                 }
-                animate(-1342);
+                animate(-width);
                 showButton();
             }
             prev.onclick = function () {
@@ -85,7 +86,7 @@
                 else {
                     index -= 1;
                 }
-                animate(1342);
+                animate(width);
                 showButton();
             }
 
@@ -98,7 +99,7 @@
                         return;
                     }
                     var myIndex = parseInt(this.getAttribute('index'));
-                    var offset = -1342* (myIndex - index);
+                    var offset = -width* (myIndex - index);
 
                     animate(offset);
                     index = myIndex;

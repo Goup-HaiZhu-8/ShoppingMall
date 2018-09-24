@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>商城首页</title>
-<link href='../../../static/goodsList.css' rel='stylesheet'  type="text/css"/>
-<link href='../../../static/homePage.css'  rel='stylesheet'  type='text/css'/>
+<link href='../static/goodsList.css' rel='stylesheet'  type="text/css"/>
+<link href='../static/homePage.css'  rel='stylesheet'  type='text/css'/>
 
 </head>
 
@@ -12,57 +12,60 @@
 <body>
 <!--导航栏-->
 <header>
- <div class="webhead">
-    <div  id="box">
-		   <li><a id="#">首页</a><li>
-		   <li><a id="#">English</a><li>
-		   <li><a id="#">中文</a><li>
-	</div>
-	<div>
+  <div class="webhead">
+    <div id="head1">
       <ul  class="menu">
-        <li><div id='logo1'><img src='../static/HomePage/Huawei-logo1.png' style='width:94px;height: 50px;'/></div></li>
+        <li><div id='logo1'><div class='pic_box'><img src='../static/HomePage/Huawei-logo1.png' style='width:94px;height: 50px;'/></div></li>
        <!--  <li><div style='width:0px;height: 40px;border:0.5px grey solid'></div></li> -->
-	    <li><div id='logo2'><img src='../static/HomePage/Huawei-logo2.png' style='width:112px;height: 50px;'/></div></li>
-		<li><a class="on" href="#"><span>关于华为</span></a></li>
-		<li><a href="#"  id='shoppingmall'><span>华为商城</span></a>
-			<ul id="list1" style='height: 122px;'>
-			     <li><a href="#">华为手机</a></li>
-			     <li><a href="#">笔记本电脑</a></li>
-			     <li><a href="#">智能家居</a></li>
-	        </ul>
-	    </li>
-		<li><a href="#" id="phone"><span>华为手机</span></a>
-		    <ul id="list2">
-			     <li><a href="#">Huawei Mate系列</a></li>
-			     <li><a href="#">Huawei P系列</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="#" id="laptop"><span>笔记本电脑</span></a>
-		    <ul id="list2">
-			     <li><a href="#">Huawei Macbook X Pro</a></li>
-			     <li><a href="#">Huawei Macbook X</a></li>
-	        </ul>
-	    </li>
-		<li><a href="#" id="service"><span>售后服务</span></a>
-		    <ul  id="list3">
-			      <li><a href="#">系统客服</a></li>
-			      <li><a href="#">人工客服</a></li>
-	        </ul>	
-	    </li>
-	    <div id='login'><a href='login.html'>登录&nbsp|</a></div> <!--还需优化-->
-	    <div id='register'><a  href='#'>注册</a></div>
-	  </ul>
-	</div>
+	    <li><div id='logo2'><div class='pic_box'><img src='../static/HomePage/Huawei-logo2.png' style='width:112px;height: 50px;'/></div></li>
+        <li><p><a class="on" href="#">关于华为</a></p></li>
+        <li><p><a href="#"  id='shoppingmall'>华为商城</a></p></li>
+		<li><p><a href="#" id="phone">华为手机</a></p></li>
+	    <li><p><a href="#" id="laptop">笔记本电脑</a></p></li>
+		<li><p><a href="#" id="service">售后服务</a></p></li>
+      </ul>
+    </div>
+    <div id="head2">
+      {% if msg %}
+        <div id='login' style="width:80px;"><a href='javascript:void(0);' style="font-size: 16px;"}}>{{ msg }}<b style="border-left:1px grey solid;margin-left: 3px;"></b></a></div>
+      {% else %}
+        <div id='login'><a href={{ url_for('customer.login') }}>登录&nbsp<b style="border-left:1px grey solid;margin-left: 3px;"></b></a></div>
+      {% endif %}
+      <div id='register'><a  href='{{ url_for('customer.register') }}'>注册</a></div>
+
+    </div>
+  </div>
+
+{#    <ul id="list1" style='height: 122px;'>#}
+{#			     <li><a href="#">华为手机</a></li>#}
+{#			     <li><a href="#">笔记本电脑</a></li>#}
+{#			     <li><a href="#">智能家居</a></li>#}
+{#    </ul>#}
+
+{#    <ul id="list2">#}
+{#			     <li><a href="#">Huawei Mate系列</a></li>#}
+{#			     <li><a href="#">Huawei P系列</a></li>#}
+{#	</ul>#}
+
+{# <ul id="list2">#}
+{#			     <li><a href="#">Huawei Macbook X Pro</a></li>#}
+{#			     <li><a href="#">Huawei Macbook X</a></li>#}
+{#</ul>   #}
+
+{#<ul  id="list3">#}
+{#			      <li><a href="#">系统客服</a></li>#}
+{#			      <li><a href="#">人工客服</a></li>#}
+{#</ul>	#}
 <header>
 <section>
 	<!--滚动播放模块-->
 	 <div id="container">
 		   <div id="list" style="left:-1342px;">
-		       <img src="../static/HomePage/meizu.jpg" alt="3"/>
-			   <img src="../static/HomePage/meizu1.jpg" alt="1"/>
-			   <img src="../static/HomePage/meizu2.jpg" alt="2"/>
-			   <img src="../static/HomePage/meizu.jpg" alt="3"/>
-			   <img src="../static/HomePage/meizu1.jpg" alt="1"/>
+		       <img src="../static/HomePage/huawei3.jpg" alt="3"/>
+			   <img src="../static/HomePage/huawei1.jpg" alt="1"/>
+			   <img src="../static/HomePage/huawei2.jpg" alt="2"/>
+			   <img src="../static/HomePage/huawei3.jpg" alt="3"/>
+			   <img src="../static/HomePage/huawei1.jpg" alt="1"/>
 		   </div>	   
 		   <div id="buttons">
 			   <span index="1"  class="on"></span>
@@ -87,7 +90,7 @@
         <li class=""><span>魅族</span></li>
         <li class=""><span>三星</span></li>
         <li class=""><span>锤子</span></li>
-      <ul>
+      </ul>
     </div>
     <div id="showBox">
     	<div  id='phone-name'>
@@ -112,85 +115,85 @@
 			</table>
 		</div>
     </div>
-    <div class="showBox1">
-    	<ul>
-    		<span></span>
-    	</ul>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
-    <div class="showBox2">
-    	<ul>
-    		<span></span>
-    	</ul>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
-    <div class="showBox3">
-    	<ul>
-    		<span></span>
-    	</ul>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
-    <div class="showBox4">
-    	<ul>
-    		<span></span>
-    	</ul>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
-    <div class="showBox5">
-    	<ul>
-    		<span></span>
-    	</ul>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
-    <div class="showBox6">
-    	<ul>
-    		<span></span>
-    	</ul>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
+{#    <div class="showBox1">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox2">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox3">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox4">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox5">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox6">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
     
 
     <!--信息卡片模块-->
 	<div id="main">
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/1.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/1.jpg"/></div>
 		            <div class="introduction">
 		                <h1>HUAWEI P20 Pro</h1>
 		                <p>新品上市99元定金预定</p>
@@ -200,7 +203,7 @@
 		    </div>
 			<div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/13.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/13.jpg"/></div>
 		            <div class="introduction">
 		                <h1>HUAWEI P20</h1>
 		                <p>新品上市99元定金预定</p>
@@ -210,7 +213,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/3.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/3.jpg"/></div>
 		            <div class="introduction">
 		                <h1>HUAWEI Mate RS  保时捷设计</h1>
 		                <p>致敬时代</p>
@@ -220,7 +223,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/14.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/14.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -230,7 +233,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/5.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/5.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -240,7 +243,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/6.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/6.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -250,7 +253,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/7.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/7.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -260,7 +263,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/8.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/8.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -270,7 +273,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/9.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/9.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -280,7 +283,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/10.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/10.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -290,7 +293,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/11.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/11.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>
@@ -300,7 +303,7 @@
 		    </div>
 		    <div class="pin">
 		        <div class="box">
-		            <img src="../static/HomePage/信息卡片/12.jpg"/>
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/12.jpg"/></div>
 		            <div class="introduction">
 		                <h1>【小米】</h1>
 		                <p>“你电子产品管家”</p>

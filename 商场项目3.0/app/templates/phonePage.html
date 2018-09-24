@@ -117,126 +117,124 @@
 	<div class="phoneshow">
 {# jinjia模块 #}
 		<div>
-            {% for good in goods %}
 			<img src="../static/phonePage/images/HUAWEI nova 3.jpg">
-			<p>{{ good.gname }}</p>
-			<span class="place">&yen;{{ good.price }}</span>
+			<p>{{ goods[1].gname }}</p>
+			<span class="place">&yen;{{ goods[1].price }}</span>
 			<span class="addcar" onclick="">加入购物车</span>
 			<hr>
-            {% endfor %}
 		</div>
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI nova 3i.jpg">#}
-{#			<p>HUAWEI nova 3i</p>#}
-{#			<span class="place">&yen;1999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI P20 Pro.jpg">#}
-{#			<p>HUAWEI P20 Pro</p>#}
-{#			<span class="place">&yen;4488</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI P20.jpg">#}
-{#			<p>HUAWEI P20</p>#}
-{#			<span class="place">&yen;3388</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI nova 3e.jpg">#}
-{#			<p>HUAWEI nova 3e</p>#}
-{#			<span class="place">&yen;1999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI nova 2s.jpg">#}
-{#			<p>HUAWEI nova 2s</p>#}
-{#			<span class="place">&yen;2599</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/华为畅享 8e 青春.jpg">#}
-{#			<p>华为畅享 8e 青春</p>#}
-{#			<span class="place">&yen;799</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI Mate RS 保时捷设计.jpg">#}
-{#			<p>HUAWEI Mate RS 保时捷设计</p>#}
-{#			<span class="place">&yen;9999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/华为畅享8e.jpg">#}
-{#			<p>华为畅享8e</p>#}
-{#			<span class="place">&yen;999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/华为畅享8 Plus.jpg">#}
-{#			<p>华为畅享8 Plus</p>#}
-{#			<span class="place">&yen;1499</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/华为畅享8e.jpg">#}
-{#			<p>华为畅享8e</p>#}
-{#			<span class="place">&yen;999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/华为畅享8.jpg">#}
-{#			<p>华为畅享8</p>#}
-{#			<span class="place">&yen;1299</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI MLA-AL10.jpg">#}
-{#			<p>HUAWEI MLA-AL10</p>#}
-{#			<span class="place">&yen;2399</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI Mate 10 保时捷设计.jpg">#}
-{#			<p>HUAWEI Mate 10 保时捷设计</p>#}
-{#			<span class="place">&yen;8999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI Mate 10(Ascend Mate).jpg">#}
-{#			<p>HUAWEI Mate 10(Ascend Mate)</p>#}
-{#			<span class="place">&yen;3999</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI Mate 10 Pro.jpg">#}
-{#			<p>HUAWEI Mate 10 Pro</p>#}
-{#			<span class="place">&yen;3599</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
-{#		<div>#}
-{#			<img src="../static/phonePage/images/HUAWEI 麦芒6.jpg">#}
-{#			<p>HUAWEI 麦芒6</p>#}
-{#			<span class="place">&yen;2199</span>#}
-{#			<span class="addcar" onclick="">加入购物车</span>#}
-{#			<hr>#}
-{#		</div>#}
+		<div>
+			<img src="../static/phonePage/images/HUAWEI nova 3i.jpg">
+			<p>{{ goods[2].gname }}</p>
+			<span class="place">&yen;{{ goods[2].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI P20 Pro.jpg">
+			<P>{{goods[3].gname}}</p>
+			<span class="place">&yen;{{ goods[3].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI P20.jpg">
+			<P>{{goods[4].gname}}</p>
+			<span class="place">&yen;{{ goods[4].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI nova 3e.jpg">
+			<P>{{goods[5].gname}}</p>
+			<span class="place">&yen;{{ goods[5].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI nova 2s.jpg">
+			<P>{{goods[6].gname}}</p>
+			<span class="place">&yen;{{ goods[6].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/华为畅享 8e 青春.jpg">
+			<p>{{goods[7].gname}}</p>
+			<span class="place">&yen;{{ goods[7].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI Mate RS 保时捷设计.jpg">
+			<P>{{goods[8].gname}}</p>
+			<span class="place">&yen;{{ goods[8].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/华为畅享8e.jpg">
+			<p>{{goods[9].gname}}</p>
+			<span class="place">&yen;{{ goods[9].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/华为畅享8 Plus.jpg">
+			<p>{{goods[10].gname}}</p>
+			<span class="place">&yen;{{ goods[10].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/华为畅享8e.jpg">
+			<p>{{goods[11].gname}}</p>
+			<span class="place">&yen;{{ goods[11].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/华为畅享8.jpg">
+			<p>{{goods[12].gname}}</p>
+			<span class="place">&yen;{{ goods[12].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI MLA-AL10.jpg">
+			<P>{{goods[13].gname}}</p>
+			<span class="place">&yen;{{ goods[13].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI Mate 10 保时捷设计.jpg">
+			<P>{{goods[14].gname}}</p>
+			<span class="place">&yen;{{ goods[14].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI Mate 10(Ascend Mate).jpg">
+			<P>{{goods[15].gname}}</p>
+			<span class="place">&yen;{{ goods[15].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI Mate 10 Pro.jpg">
+			<P>{{goods[16].gname}}</p>
+			<span class="place">&yen;{{ goods[16].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
+		<div>
+			<img src="../static/phonePage/images/HUAWEI 麦芒6.jpg">
+			<P>{{goods[18].gname}}</p>
+			<span class="place">&yen;{{ goods[18].price }}</span>
+			<span class="addcar" onclick="">加入购物车</span>
+			<hr>
+		</div>
 	</div>
 </div>
 <div id="bottom">

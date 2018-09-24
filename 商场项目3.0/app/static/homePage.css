@@ -14,122 +14,134 @@ a{
 	}
 
 header{background-color: #ffffff;
-        height: 80px;width:100%;margin-bottom: 20px;}
+        height: 80px;width:1350px;}
 
-li{list-style: none;
+li{list-style: none;}
+
+section{width:1350px;height:2000px;background-color: #ffffff;margin-top: 20px;}
+footer{width:1350px;height:150px;background-color: grey;margin-top: 2px;}
+.webhead{
+	position:relative;
+	top:16px;
+	width:1200px;height:80px;
+	overflow: hidden;
 }
 
-section{width:100%;height:2000px;background-color: #ffffff;margin-top: 20px;}
-footer{width:100%;height:150px;background-color: grey;margin-top: 2px;}
-#box{width:80px;height: 60px;position: absolute;top:48px;right: 60px;display: none;border-radius: 80%;color:orange;}
-#box li{line-height:20px; margin-top: 1px ;background-color:white;color:orange;font-size: 14px; text-align: center;}
-/*#yuyan{height: 25px;width:25px;position: absolute;top:20px;right:80px;background: url(菜单栏.png);}*/
-.menu{list-style: none;
+#head1{
+	width:1000px;
 	height:80px;
-	width:100%;
-	left:10%;
-	top:30px;
+	float:left;
+}
+
+#head2{
+	width:200px;
+	height:80px;
+	float:left;
+}
+
+.menu{
+	list-style: none;
+	height:80px;
+	width:1000px;
 	position:relative;
-	overflow: hidden;
 	}
 
 	
 .menu > li{
 	float:left;
 	display:block;
-	line-height:40px;
-	width:100px;height:40px;
+	line-height:80px;
+	width:100px;height:80px;
 	background-color:#ffffff;
 	text-align: center;
 	margin-left:30px;
 	color:#ffffff;
-	border-bottom:3px red solid;
 	}
 
 .menu > li:nth-child(1){
 	border-bottom: none;
-	left:20%;
 	margin-right: 10px;
 } 
 
-.menu > li:nth-child(1) div{
+.menu > li:nth-child(1){
 	height:50px;
+	padding-top: 15px;
 }
 
 .menu > li:nth-child(2){
 	border-bottom: none;
 	margin-left:10px;
+	padding-top: 15px;
 } 	
 
 .menu > li:nth-child(3){
 	margin-left:150px;
 } 	
 
-
-.menu li a span:hover{color:#F60000;}
-
-.menu li ul{
-		height: 81px;
-		width:300px;
-		position:relative;
-		margin-top: 3px;
-		background-color:#ffffff;
-		color:#000000;
-	    display: none;
-        z-index: 20;}
-
-.menu li ul li{
-	height:40px;
-	width:300px;
-	border-bottom: white 0.5px solid;
+.menu li p{
+	    width:80px;height:90px;
 }
 
-@keyframes rotation{
-	from{transform: rotateY(0deg);}
-	to{transform:rotateY(90deg);}
-}
+.menu li p a:hover{color:#F60000;}
+
+/*.menu li ul{*/
+		/*height: 81px;*/
+		/*width:300px;*/
+		/*position:relative;*/
+		/*margin-top: 3px;*/
+		/*background-color:#ffffff;*/
+		/*color:#000000;*/
+	    /*display: none;*/
+        /*z-index: 20;}*/
+
+/*.menu li ul li{*/
+	/*height:40px;*/
+	/*width:300px;*/
+	/*border-bottom: white 0.5px solid;*/
+/*}*/
+
+/*@keyframes rotation{*/
+	/*from{transform: rotateY(0deg);}*/
+	/*to{transform:rotateY(90deg);}*/
+/*}*/
 	
-.menu  li:hover ul{display:block;
-			animation: rotation 0.5s linear;
-}
+/*.menu  li:hover ul{display:block;*/
+			/*animation: rotation 0.5s linear;*/
+/*}*/
 
-img{height: 400px;height: 120px;}
-	
-.head{width:1366px;
-	background-color:#FFFFFF;}
+
 
 
 /*登录注册模块*/
 #login{
 	width: 50px;
 	height: 20px;
-	float:left;
-	margin-left: 200px;
-	margin-top:10px;
+	margin-top:25px;
 	/*border:1px red solid;*/
-	text-align: center;
 	font-size: 14px;
+	text-align: center;
 	color:grey;
+	display:inline-block;
 	}
 
 #register{
 	width: 50px;
 	height: 20px;
-	float:left;
-	margin-left: -10px;
-	margin-top:10px;
+    margin-top:25px;
+	margin-left:-10px;
 	/*border:1px red solid;*/
 	text-align: center;
 	font-size: 14px;
 	color:grey;
+	display:inline-block;
 	}
 
 #login a{
-	color:grey;font-size: 16px;font-weight: 400;
+	color:grey;font-size: 14px;font-weight: 400;
 }
 
 #register a{
-	color:grey;font-size: 16px;font-weight: 400;
+	color:grey;font-size: 14px;font-weight: 400;
 }
 
 #login a:hover{
@@ -222,7 +234,7 @@ img{height: 400px;height: 120px;}
 	height:100px;
 	color:black;
 	font-size: 28px;
-	font-weight: 550;
+	font-weight: 700;
 }
 
 
@@ -240,14 +252,25 @@ img{height: 400px;height: 120px;}
         padding: 0 0 0 3px;
         float:left;
         margin-top:5px;
+		overflow: hidden;
+		transition:3s;
     }
 
-	.box:hover{
+	.pic_box{
+		 width:180px;
+         height:162px;
+		 overflow: hidden;
+	}
+
+	.box img:hover{
 	transform:scale(1.03);
-	animation-delay: 3s;}
+     }
+
+
 
     .box{
         height: 350px;
+		width:220px;
         border:0.5px solid #ccc;
         /*box-shadow: 1px 1px 20px grey; */
         border-radius: 2px;
