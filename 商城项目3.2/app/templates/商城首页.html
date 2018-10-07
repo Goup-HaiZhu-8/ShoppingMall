@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城首页</title>
+<link href='../static/goodsList.css' rel='stylesheet'  type="text/css"/>
+<link href='../static/homePage.css'  rel='stylesheet'  type='text/css'/>
+
+</head>
+
+
+<body>
+<!--导航栏-->
+<header>
+  <div class="webhead">
+    <div id="head1">
+      <ul  class="menu">
+        <li><div id='logo1'><div class='pic_box'><img src='../static/HomePage/Huawei-logo1.png' style='width:94px;height: 50px;'/></div></li>
+       <!--  <li><div style='width:0px;height: 40px;border:0.5px grey solid'></div></li> -->
+	    <li><div id='logo2'><div class='pic_box'><img src='../static/HomePage/Huawei-logo2.png' style='width:112px;height: 50px;'/></div></li>
+        <li><p><a class="on" href="#">关于华为</a></p></li>
+        <li><p><a href="#"  id='shoppingmall'>华为商城</a></p></li>
+		<li><p><a href={{ url_for('goods.goodlist') }} id="phone">华为手机</a></p></li>
+	    <li><p><a href="#" id="laptop">笔记本电脑</a></p></li>
+		<li><p><a href="#" id="service">售后服务</a></p></li>
+      </ul>
+    </div>
+    <div id="head2">
+      {% if msg %}
+        <div id='login' style="width:80px;"><a href='javascript:void(0);' style="font-size: 16px;"}}>{{ msg }}<b style="border-left:1px grey solid;margin-left: 3px;"></b></a></div>
+        <div id='register'><a  href='{{ url_for('homepage_login',msg='logout') }}'>退出</a></div>
+      {% else %}
+        <div id='login'><a href={{ url_for('customer.login') }}>登录&nbsp<b style="border-left:1px grey solid;margin-left: 3px;"></b></a></div>
+        <div id='register'><a  href='{{ url_for('customer.register') }}'>注册</a></div>
+      {% endif %}
+
+
+    </div>
+  </div>
+
+{#    <ul id="list1" style='height: 122px;'>#}
+{#			     <li><a href="#">华为手机</a></li>#}
+{#			     <li><a href="#">笔记本电脑</a></li>#}
+{#			     <li><a href="#">智能家居</a></li>#}
+{#    </ul>#}
+
+{#    <ul id="list2">#}
+{#			     <li><a href="#">Huawei Mate系列</a></li>#}
+{#			     <li><a href="#">Huawei P系列</a></li>#}
+{#	</ul>#}
+
+{# <ul id="list2">#}
+{#			     <li><a href="#">Huawei Macbook X Pro</a></li>#}
+{#			     <li><a href="#">Huawei Macbook X</a></li>#}
+{#</ul>   #}
+
+{#<ul  id="list3">#}
+{#			      <li><a href="#">系统客服</a></li>#}
+{#			      <li><a href="#">人工客服</a></li>#}
+{#</ul>	#}
+<header>
+<section>
+	<!--滚动播放模块-->
+	 <div id="container">
+		   <div id="list" style="left:-1342px;">
+		       <img src="../static/HomePage/huawei3.jpg" alt="3"/>
+			   <img src="../static/HomePage/huawei1.jpg" alt="1"/>
+			   <img src="../static/HomePage/huawei2.jpg" alt="2"/>
+			   <img src="../static/HomePage/huawei3.jpg" alt="3"/>
+			   <img src="../static/HomePage/huawei1.jpg" alt="1"/>
+		   </div>	   
+		   <div id="buttons">
+			   <span index="1"  class="on"></span>
+			   <span index="2"></span>
+			   <span index="3"></span>	    
+		   </div>
+		   <div id="background"></div>  
+		   <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+	       <a href="javascript:;" id="next" class="arrow">&gt;</a>
+    </div>
+
+	<div  id='Huawei_Classical'><span>华为精品</span></div>
+
+	<!--信息导航页面-->
+	<div id='showList'>
+      <ul>
+        <li class=""><span>华为</span></li>
+        <li class=""><span>ipone</span></li>
+        <li class=""><span>小米</span></li>
+        <li class=""><span>中兴</span></li>
+        <li class=""><span>1+</span></li>
+        <li class=""><span>魅族</span></li>
+        <li class=""><span>三星</span></li>
+        <li class=""><span>锤子</span></li>
+      </ul>
+    </div>
+    <div id="showBox">
+    	<div  id='phone-name'>
+	    	<ul>
+	    		<li><span>华为手机</span></li>
+	    	</ul>
+	    </div>
+	    <div  id='phone-list'>
+			<table>
+				<tr>
+					<td><a href={{ url_for('goods.goodlist') }}>P系列</a></td>
+					<td><a href={{ url_for('goods.goodlist') }}>Mate系列</a></td>
+				</tr>
+				<tr>
+					<td><a href={{ url_for('goods.goodlist') }}>nove系列</a></td>
+					<td><a href={{ url_for('goods.goodlist') }}>麦芒系列</a></td>
+				</tr>
+				<tr>
+					<td><a href={{ url_for('goods.goodlist') }}>畅享系列</a></td>
+					<td><a href='#'>#######</a></td>
+				</tr>
+			</table>
+		</div>
+    </div>
+{#    <div class="showBox1">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox2">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox3">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox4">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox5">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+{#    <div class="showBox6">#}
+{#    	<ul>#}
+{#    		<span></span>#}
+{#    	</ul>#}
+{#		<ul>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#			<li></li>#}
+{#		</ul>#}
+{#    </div>#}
+    
+
+    <!--信息卡片模块-->
+	<div id="main">
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/1.jpg"/></div>
+		            <div class="introduction">
+		                <h1>HUAWEI P20 Pro</h1>
+		                <p>新品上市99元定金预定</p>
+		                <p><a href='{{ url_for('goods.goodlist') }}' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+			<div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/13.jpg"/></div>
+		            <div class="introduction">
+		                <h1>HUAWEI P20</h1>
+		                <p>新品上市99元定金预定</p>
+		                <p><a href='{{ url_for('goods.goodlist') }}' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/3.jpg"/></div>
+		            <div class="introduction">
+		                <h1>HUAWEI Mate RS  保时捷设计</h1>
+		                <p>致敬时代</p>
+		                <p><a href='{{ url_for('goods.goodlist') }}' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/14.jpg"/></div>
+		            <div class="introduction">
+		                <h1>充电e宝</h1>
+		                <p>充电e宝</p>
+		                <p><a href='#' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/5.jpg"/></div>
+		            <div class="introduction">
+		                <h1>HUAWEI P20</h1>
+		                <p>低调奢华</p>
+		                <p><a href='{{ url_for('goods.goodlist') }}' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/6.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为Note3</h1>
+		                <p>性能扛扛的</p>
+		                <p><a href='{{ url_for('goods.goodlist') }}' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/7.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为8</h1>
+		                <p>照出最美的照片</p>
+		                <p><a href='{{ url_for('goods.goodlist') }}' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/8.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为Laptop1</h1>
+		                <p>想你所想</p>
+		                <p><a href='#' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/9.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为Laptop2</h1>
+		                <p>轻薄型设计</p>
+		                <p><a href='#' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/10.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为Laptop</h1>
+		                <p>Laptop系列旗舰</p>
+		                <p><a href='#' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/11.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为鼠标</h1>
+		                <p>静音快捷</p>
+		                <p><a href='#' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="pin">
+		        <div class="box">
+		            <div class='pic_box'><img src="../static/HomePage/信息卡片/12.jpg"/></div>
+		            <div class="introduction">
+		                <h1>华为背包</h1>
+		                <p>极客必备品</p>
+		                <p><a href='#' style='color:red;'>点击购买</a></p>
+		            </div>
+		        </div>
+		    </div>
+
+
+
+
+
+
+	</div>
+</section>
+<footer>
+	<!--平台信息模块-->
+	<dl>
+		    <dt>联系方式</dt>
+			<dd><a href="">联系创作者</a></dd>
+			<dd><a href="">免责声明</a></dd>
+			<dd><a href="">新浪微博</a></dd>
+			<dd><a href="">官方微信</a></dd>
+		
+	</dl>
+	<dl>
+		    <dt>保修与退换货</dt>
+			<dd><a href="">保修政策</a></dd>
+			<dd><a href="">退换货政策</a></dd>
+			<dd><a href="">退换货流程</a></dd>
+			<dd><a href="">保修状态查询</a></dd>
+		　　<dd><a href="">配件防伪查询</a></dd>
+	</dl>
+	<dl>
+		    <dt>维修与技术支持</dt>
+			<dd><a href="">售后网点</a></dd>
+			<dd><a href="">预约维修</a></dd>
+			<dd><a href="">手机寄修</a></dd>
+			<dd><a href="">备件价格查询</a></dd>
+		　　<dd><a href="">上门服务</a></dd>
+	</dl>
+	<dl>
+		<dt>关于华为</dt>
+		<dd><a href="#">公司介绍</a></dd>
+		<dd><a href="#">华为商城简介</a></dd>
+		<dd><a href="#">华为线下门店</a></dd>
+		<dd><a href="#">荣耀线下门店</a></dd>
+		<dd><a href="#">诚征英才</a></dd>
+	</dl>
+	<dl>
+		<dt>友情链接</dt>
+		<dd><a href="#">华为官网</a></dd>
+		<dd><a href="#">华为商城手机版</a></dd>
+		<dd><a href="#">荣耀官网</a></dd>
+		<dd><a href="#">花粉俱乐部</a></dd>
+		<dd><a href="#">网站地图</a></dd>
+	</dl>
+
+</footer>
+<div class="copyright">
+			<p>©2015 HAWEI Telecom Equipment Co., Ltd. All rights reserved. 备案号：粤ICP备13003602号-2 经营许可证编号：粤B2-20130198</p>
+</div>
+ 
+<!-- <script>
+	window.onload= function(){
+		// var _yuyan=document.getElementById("yuyan"),
+		// box=document.getElementById("box");
+
+		// _yuyan.onmouseover=function(){
+		// 	box.style.display="block";
+		// }
+		// _yuyan.onmouseout=function(){
+		// 	box.style.display="none";
+		// }
+		
+		/*点击登录按钮重定向到登录界面*/
+		var login = document.getElementById('login')
+		login.onclick = function(){
+			location.href = 'shoppingmall.html';			
+		}
+
+		/*信息卡片模块*/
+		function waterfall(parent,pin){
+			var  oParent = document.getElementById('main');
+			var  oChild = oParent.getElementsByClassName('pin');
+			var  cPinW = oChild[0].offsetWidth;
+			var num = Math.floor((document.body.clientWidth-350)/cPinW);
+			oParent.style.cssText = 'width:'+(cPinW*num-142)+'px;';
+
+
+		}
+
+
+
+		waterfall()
+
+
+	}
+</script>  -->
+<script type="text/javascript"  src="../../../static/主页.js"></script>
+</body>
+</html> 

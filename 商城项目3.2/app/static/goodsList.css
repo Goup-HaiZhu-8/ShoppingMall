@@ -1,0 +1,113 @@
+#showList{
+    position: absolute;
+    top:90px ;
+    left:52px;
+    height:400px;
+    width: 200px;
+    z-index: 10;
+  }
+ #showList ul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 400px;
+    width: 200px;
+   /* display:block;*/
+
+  }
+ #showList ul li{
+    height:50px;
+    width:200px;
+    background-color: rgba(210,210,210,0.8) ;
+    list-style: none;
+    display:inline-block;
+    border-bottom:0.5px white;
+    text-align:center;
+  }
+  
+ #showList ul li:hover{
+    background-color: rgba(255,255,255,0.8)
+  }
+
+  #showList ul li span{
+    color:black;
+    line-height: 50px;   
+    font-size: 18px;
+    z-index: 10;
+   }
+
+
+  #showBox{
+    position: absolute;
+    top:100px;
+    left:250px;
+    height:300px;
+    width:300px;
+    z-index: 11;
+    display: none;
+  }
+  
+  
+
+  #phone-name {
+    height: 20px;
+    width: 200px;
+    z-index: 11;
+  }
+
+  #phone-name ul{
+     height: 20px;
+     width: 404px;
+     list-style: none;
+     background-color: rgba(255,255,255,0.8); 
+     z-index: 11;
+  }
+
+  #phone-name ul li{
+    height: 20px;
+    width: 400px;
+    line-height: 20px;
+    text-align: center;
+  }
+   #phone-name ul li span{
+     font-size: 14px;  
+   }
+  
+ 
+  #phone-list{
+    height:270px;
+    width:300px;}
+
+  #phone-list table{
+    height:270px;
+    width:400px;
+    background-color: rgba(255,255,255,0.8) ;
+   /* border:1px red solid; */
+  }
+
+  /*与#showList几乎一样*/
+  #phone-list table tr{
+    height:50px;
+    width:400px;
+    list-style: none;
+    display:block;
+    border-bottom:0.5px white;
+    text-align:center;
+    /*border:1px solid black;*/
+  }
+
+  #phone-list table tr td{
+      height:50px;
+      width:200px;
+      /*border:1px solid black;*/
+  }
+
+  #phone-list tr td:hover a{
+    color:darkred;
+  }
+
+  #phone-list tr td a{
+    color:black;
+    line-height:48px;   
+    font-size: 14px;
+    z-index: 11;
+   }

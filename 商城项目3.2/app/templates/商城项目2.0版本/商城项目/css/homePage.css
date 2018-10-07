@@ -1,0 +1,332 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	}
+	
+body{background-color:#FFFFFF;
+	}
+
+a{
+	color:#000000;
+	font-weight: 600;
+	text-decoration:none;
+	}
+
+header{background-color: #ffffff;
+        height: 80px;width:100%;margin-bottom: 20px;}
+
+li{list-style: none;
+}
+
+section{width:100%;height:2000px;background-color: #ffffff;margin-top: 20px;}
+footer{width:100%;height:150px;background-color: grey;margin-top: 2px;}
+#box{width:80px;height: 60px;position: absolute;top:48px;right: 60px;display: none;border-radius: 80%;color:orange;}
+#box li{line-height:20px; margin-top: 1px ;background-color:white;color:orange;font-size: 14px; text-align: center;}
+/*#yuyan{height: 25px;width:25px;position: absolute;top:20px;right:80px;background: url(菜单栏.png);}*/
+.menu{list-style: none;
+	height:80px;
+	width:100%;
+	left:10%;
+	top:30px;
+	position:relative;
+	overflow: hidden;
+	}
+
+	
+.menu > li{
+	float:left;
+	display:block;
+	line-height:40px;
+	width:100px;height:40px;
+	background-color:#ffffff;
+	text-align: center;
+	margin-left:30px;
+	color:#ffffff;
+	border-bottom:3px red solid;
+	}
+
+.menu > li:nth-child(1){
+	border-bottom: none;
+	left:20%;
+	margin-right: 10px;
+} 
+
+.menu > li:nth-child(1) div{
+	height:50px;
+}
+
+.menu > li:nth-child(2){
+	border-bottom: none;
+	margin-left:10px;
+} 	
+
+.menu > li:nth-child(3){
+	margin-left:150px;
+} 	
+
+
+.menu li a span:hover{color:#F60000;}
+
+.menu li ul{
+		height: 81px;
+		width:300px;
+		position:relative;
+		margin-top: 3px;
+		background-color:#ffffff;
+		color:#000000;
+	    display: none;
+        z-index: 20;}
+
+.menu li ul li{
+	height:40px;
+	width:300px;
+	border-bottom: white 0.5px solid;
+}
+
+@keyframes rotation{
+	from{transform: rotateY(0deg);}
+	to{transform:rotateY(90deg);}
+}
+	
+.menu  li:hover ul{display:block;
+			animation: rotation 0.5s linear;
+}
+
+img{height: 400px;height: 120px;}
+	
+.head{width:1366px;
+	background-color:#FFFFFF;}
+
+
+/*登录注册模块*/
+#login{
+	width: 50px;
+	height: 20px;
+	float:left;
+	margin-left: 200px;
+	margin-top:10px;
+	/*border:1px red solid;*/
+	text-align: center;
+	font-size: 14px;
+	color:grey;
+	}
+
+#register{
+	width: 50px;
+	height: 20px;
+	float:left;
+	margin-left: -10px;
+	margin-top:10px;
+	/*border:1px red solid;*/
+	text-align: center;
+	font-size: 14px;
+	color:grey;
+	}
+
+#login a{
+	color:grey;font-size: 16px;font-weight: 400;
+}
+
+#register a{
+	color:grey;font-size: 16px;font-weight: 400;
+}
+
+#login a:hover{
+	color:red;
+}
+
+#register :hover{
+	color:red;
+}
+
+
+/*
+#login:hover{
+	transform:scale(1.05);
+	/*animation-delay: 3s;
+}*/
+
+
+
+/*#login_box{
+	position: absolute;
+	width:150px;
+	height: 150px;
+	float:right;
+	margin-right: 150px;
+	margin-top: 20px;
+	background-color: grey;
+	box-shadow: 2px 2px 10px  orange ;
+	display: none;
+}*/
+
+
+
+/*滚动图片模块*/
+#container{width:1342px;height:400px;
+	  overflow:hidden;position:relative;}
+
+#list{width: 6710px;height:400px;
+	position:absolute;z-index:1;}
+
+#list img{float:left;
+         width: 1342px;
+         height: 400px;
+        /*border:blue 1px solid;*/}
+
+#background{position:absolute;z-index:2;
+	height:20px;width:100px;
+	background-color: #FFFFFF;
+	opacity:0.5;filter:Alpha(opacity=50);
+	border-radius:22%;
+	bottom:15px;left:600px;}
+
+#buttons{position:absolute;z-index:3;
+	height:10px;width:100px;
+	bottom:20px;left:600px;}
+
+#buttons span{cursor:pointer;float:left;
+	         border:1px solid #666;width:10px;height:10px;
+	     	 border-radius:50%;
+	     	 margin-left:10px;background:white;}	
+
+#buttons .on{background:orangered;}	
+
+.arrow{cursor:pointer;display:none;
+	  line-height:39px;text-align:center;
+	  font-size:38px;font-weight:400; 
+	  height:50px;width:30px;
+	  position:absolute;z-index:2;top:180px;
+	  background-color:RGBA(0,0,0,.3);
+	  color:RGBA(255,255,255,.5);}	
+
+.arrow:hover{background-color:RGBA(9,9,9,.2);}	
+
+#container:hover .arrow{display:block;}	
+
+#prev{left:20px;}	
+
+#next{right:20px;}
+
+
+#Huawei_Classical{
+	margin-top:50px;
+	width:100%;
+	height:100px;
+	text-align: center;
+}
+
+#Huawei_Classical span{
+	width:100%;
+	height:100px;
+	color:black;
+	font-size: 28px;
+	font-weight: 550;
+}
+
+
+/*中部信息卡片模块*/
+ *{padding: 0;margin:0;}
+    #main{
+        position: relative;
+        border:1px red solid;
+        margin-left: 200px;
+        background: white;
+    }
+    .pin{
+    	width:220px;
+    	height: 350px;
+        padding: 0 0 0 3px;
+        float:left;
+        margin-top:5px;
+    }
+
+	.box:hover{
+	transform:scale(1.03);
+	animation-delay: 3s;}
+
+    .box{
+        height: 350px;
+        border:0.5px solid #ccc;
+        /*box-shadow: 1px 1px 20px grey; */
+        border-radius: 2px;
+    }
+    .box img{
+    	position: relative;
+    	padding-left: 25px;
+        width:162px;
+        height:162px;
+    }
+   .introduction h1{color:dimgrey;font-size: 16px;margin-top: 3px;
+    margin-left: 20px;}
+   .introduction p{color:grey;font-size: 14px;margin-top: 10px;
+   margin-left: 20px;}
+   .introduction a{font-size: 14px;
+}
+
+
+	
+/*#video{
+	width:500px;height:300px;
+	position:relative;
+	display: block;
+	margin: auto;
+	z-index: 1;
+	}*/
+
+/*#mask{width:1688px;height:428px;
+	background-color:#FFFFFF;
+	opacity:0.8;
+    filter:Alpha(opacity=80);
+	position:absolute;
+	top:0px;
+	display:none;	
+	}*/
+/*
+._list1{list-style: none;
+	  position:absolute;
+	  text-align:center;
+	  left:944px;
+	  width:180px;
+	  height:82px;
+	  margin-top: 1px;
+	  z-index: 100;
+	  display:none;
+	}
+._list1 li{
+	  background-color: #4E4D4D;
+	  height: 40px;
+	  margin-top:1px;
+	  font-size: 16px;
+	  
+	}
+	
+._list2{list-style: none;
+	  position:absolute;
+	  text-align:center;
+	  left:762px;
+	  width:180px;
+	  height:82px;
+	  z-index: 1;
+	  display:none;
+	}
+._list2 li{
+	  background-color: #4E4D4D;
+	  height: 40px;
+	  margin-top:1px;
+	  font-size: 16px;
+	}*/
+
+dl{width:33.3%;float:left;text-align: center;margin-top:15px;}
+dl:nth-child(1){height:110px;order:1;}
+dl:nth-child(2){height:110px;order:2;}
+dl:nth-child(3){height:110px;order:3;}
+dt{color:white;}
+dd:hover{color:orange;}
+dd{padding-top:3px;}
+dd a{margin-top:3px;color:white;height:16px;font-size: 13px;}
+dd a:hover {color:yellow;}
+.copyright{position:relative;width:100%;text-align: center;color:white;font-size: 10px;
+            background-color:grey; padding-bottom: 8px;}
+

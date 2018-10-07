@@ -1,0 +1,99 @@
+/*全局布局 --------------------------------------------------------------*/
+body{
+	margin: 0px;
+	width: 100%;
+}
+/*头部布局 ---------------------------------------------------------------*/
+#nav{
+	width:100%;
+	height:100px;
+	background-color:silver;
+}
+.navmain{
+	/*margin:0px auto;*/
+	position:relative;
+	height:100px;
+	width:100%;
+	/*border:1px solid red;*/
+}
+#nav-left{
+	float:left;
+	width:677px;
+	clear:both;
+	/*border:1px solid red;*/
+}
+#nav-left>a{
+	display: inline-block;
+	float:left;
+	height:26px;
+	line-height: 26px;
+	font-size:12px;
+	color: black;
+	text-decoration: none;
+}
+#nav-right{
+	float:right;
+	width:140px;
+	height:26px;
+	/*border:1px solid red;*/
+}
+#nav-right>a{
+	display: inline-block;
+	float:left;
+	height:26px;
+	line-height: 26px;
+	font-size:12px;
+	color: black;
+	text-decoration: none;
+}
+.nav-log{
+	width:230px;
+	height:55px;
+	/*margin-top:36px;*/
+	/*border:1px solid purple;*/
+	position:absolute;
+	left:40px;
+	top:36px;
+}
+/*身体布局 --------------------------------------------------------------*/
+#body{height:auto;}
+.title{ width:100%;top:0;background-color: #FFF;text-align: center;}
+.selector{width: 80%;margin:0 auto;border-bottom: 1px solid silver;}
+.select{margin-left: 60px; display: inline-block;vertical-align: top;text-align: left;}
+.h2{text-align: center;height: 20px;width: 100%;border-bottom: 1px solid silver;padding-bottom: 8px;line-height: 20px;}
+
+.phoneshow{display: flex;flex-direction: row;flex-wrap: wrap;width: 70%;margin: 0 auto;}
+.phoneshow{width: 295px;height: 350px;position:absolute;float:left;}
+.phoneshow div{width: 295px;height: 350px;background-color:#fff;margin: 10px;}
+.phoneshow img{width: 200px;margin: 10px 45px;top: 0;}
+.addcar{float: right;margin-right: 15px;color: #fff;width: 110px;height: 25px;background-color: orange;
+		text-align: center;border-radius: 4%;vertical-align: bottom;}
+p{text-align: center;}
+span{margin-left: 15px;}
+hr{margin: 20px 15px;}
+
+
+
+
+
+/*尾部布局 --------------------------------------------------------------*/
+
+footer{width:80%;height:220px;background-color: silver;margin:0px auto;color:grey;text-align: center;}
+dl{width:20%;float:left;text-align:left;margin-top:15px;}
+dl:nth-child(1){height:150px;order:1;}
+dl:nth-child(2){height:150px;order:2;}
+dl:nth-child(3){height:150px;order:3;}
+dt{color:grey;}
+dd:hover{color:red;}
+dd{padding-top:3px;}
+dd a{margin-top:3px;color:grey;height:16px;font-size: 13px;font-weight: 500;}
+dd a:hover {color:red;}
+#bottom{background-color:silver;}
+.copyright{position:relative;
+	        width:100%;height:60px;text-align: left;color:grey;font-size: 8px;
+            background-color:silver; padding-bottom: 8px;}
+
+.copyright p{width:900px;height: 15px;margin-left:150px;
+             text-align:left;font-size: 12px;}
+
+.copyright p:nth-child(2){margin-top: 10px;}
